@@ -7,8 +7,6 @@ pool:
 jobs:
 - job: 'PSRuleAnalysis'
   displayName: "Run PSRule analysis"
-  pool:
-    vmImage: $(vmImageName)
   steps:
   - task: bewhite.ps-rule.assert.ps-rule-assert@2
     inputs:
